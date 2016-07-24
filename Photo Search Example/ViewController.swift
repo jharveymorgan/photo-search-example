@@ -18,13 +18,13 @@ class ViewController: UIViewController {
         let manager = AFHTTPSessionManager()
         
         // create array to hold photo search parameters for flickr api
-        let searchParameters = [ "method": "flicker.photos.search",
-                                 "api_key": "22e56dce0d2e648fa83b2dce186082ac",
-                                 "format": "json",
-                                 "nojsoncallback": 1,
-                                 "text": "dogs",
-                                 "extras": "url_m",
-                                 "per_page": 5]
+        let searchParameters = ["method": "flickr.photos.search",
+                                "api_key": "22e56dce0d2e648fa83b2dce186082ac",
+                                "format": "json",
+                                "nojsoncallback": 1,
+                                "text": "dogs",
+                                "extras": "url_m",
+                                "per_page": 5]
         // use GET method to call flickr
         manager.GET("https://api.flickr.com/services/rest/",
                     parameters: searchParameters,
@@ -33,6 +33,12 @@ class ViewController: UIViewController {
                         if let responseObject = responseObject {
                             // print json information
                             print("Response: \(responseObject.description)")
+                            
+                            // get url of first photo result
+                            let json = JSON(responseObject)
+                            if let photoNo1 = json["photos"]["photo"][0]["url_m"].string {
+                                print("First photo url: \(photoNo1)")
+                            }
                         }
             },
                     failure: { (operation: NSURLSessionDataTask?, error: NSError) in

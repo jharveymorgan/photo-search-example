@@ -18,6 +18,7 @@
 		BAFEC9011D446B1300631917 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEC8F91D446B1300631917 /* AFURLRequestSerialization.m */; };
 		BAFEC9021D446B1300631917 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEC8FB1D446B1300631917 /* AFURLResponseSerialization.m */; };
 		BAFEC9031D446B1300631917 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFEC8FD1D446B1300631917 /* AFURLSessionManager.m */; };
+		BAFEC9061D4475A800631917 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFEC9051D4475A800631917 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BAFEC8FC1D446B1300631917 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		BAFEC8FD1D446B1300631917 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		BAFEC9041D446B3900631917 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		BAFEC9051D4475A800631917 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "Photo Search Example/SwiftyJSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				BAFEC9041D446B3900631917 /* bridge.h */,
+				BAFEC9051D4475A800631917 /* SwiftyJSON.swift */,
 				BAFEC76F1D446AE100631917 /* Photo Search Example */,
 				BAFEC76E1D446AE100631917 /* Products */,
 				BAFEC8F01D446B1300631917 /* AFNetworking */,
@@ -184,6 +187,7 @@
 				BAFEC7731D446AE100631917 /* ViewController.swift in Sources */,
 				BAFEC9011D446B1300631917 /* AFURLRequestSerialization.m in Sources */,
 				BAFEC8FF1D446B1300631917 /* AFNetworkReachabilityManager.m in Sources */,
+				BAFEC9061D4475A800631917 /* SwiftyJSON.swift in Sources */,
 				BAFEC9021D446B1300631917 /* AFURLResponseSerialization.m in Sources */,
 				BAFEC7711D446AE100631917 /* AppDelegate.swift in Sources */,
 			);
