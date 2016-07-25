@@ -10,5 +10,6 @@
 #define bridge_h
 
 #import "AFNetworking/AFNetworking.h"
+#import "UIKit+AFNetworking/UIKit+AFNetworking.h"
 
 #endif /* bridge_h */
